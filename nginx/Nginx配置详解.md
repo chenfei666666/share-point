@@ -155,5 +155,4 @@
       (2) 当location后面规则不带斜杠，但proxy_pass URL后面带斜杠时，如果请求的URL中带有斜杠，Nginx会将请求转发到proxy_pass指定的URL；如果请求的URL中不带斜杠，Nginx会自动加上一个斜杠后再进行转发。
       (3) 当location后面规则带斜杠，但proxy_pass URL后面不带斜杠时，如果请求的URL中也带有斜杠，Nginx会将请求转发到proxy_pass指定的URL；如果请求的URL中没有斜杠，Nginx会自动去掉location后面规则中的斜杠后再进行转发。
       (4) 当location后面规则和proxy_pass URL后面都不带斜杠时，如果请求的URL中也不带斜杠，Nginx会将请求转发到proxy_pass指定的URL；如果请求的URL中带有斜杠，Nginx会自动去掉proxy_pass URL后面的斜杠后再进行转发。
-    ```
       ```
